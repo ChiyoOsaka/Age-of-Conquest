@@ -1,0 +1,169 @@
+name: Drill
+maxSize: 100
+minSize: 50
+harvestBlocks:
+    - SAND
+    - GRAVEL
+    - WHEAT
+    - CARROTS
+    - GOLD_ORE
+    - SMOOTH_STAIRS
+    - STONE_STAIRS
+    - PUMPKIN
+    - ARMOR_STAND
+    - SOIL
+    - POTATOES
+    - STEP
+    - COBBLESTONE
+    - DOUBLE_STEP
+    - MELON_BLOCK
+    - SEAL_LANTERN
+    - WOOL
+    - SOUL_SAND
+    - COBBLESTONE_STAIRS
+    - WALL_SIGN
+    - STATIONARY_LAVA
+    - LAVA
+    - PRISMARINE
+    - MOSSY_COBBLESTONE
+    - NETHER_BRICK
+    - QUARTZ_BLOCK
+    - QUARTZ_STAIRS
+    - FURNACE
+    - LEAVES
+    - LOG
+    - GLASS
+    - FLOWING_LAVA
+    - CRAFTING_TABLE
+    - WORKBENCH
+    - TORCH
+    - CHEST
+    - BED
+    - WOODEN_DOOR
+    - SANDSTONE
+    - SANDSTONE_SLAB
+    - FENCE
+    - DARK_OAK_FENCE
+    - OAK_FENCE
+    - ACACIA_FENCE
+    - JUNGLE_FENCE
+    - SPRUCE_FENCE
+    - BIRCH_FENCE
+    - FENCE_GATE
+    - SPRUCE_FENCE_GATE
+    - BIRCH_FENCE_GATE
+    - OAK_FENCE_GATE
+    - DARK_OAK_FENCE_GATE
+    - ACACIA_FENCE_GATE
+    - JUNGLE_FENCE_GATE
+    - WOOD
+    - SMOOTH_BRICK
+    - STONE
+    - STONEBRICK
+    - DOUBLE_STONE_SLAB
+    - STONE_SLAB
+    - STONE_STAIRS
+    - WOOD_SLAB
+    - WOOD_STAIRS
+    - FENCE
+    - COBBLESTONE
+    - PLANKS
+    - DIRT
+    - GRASS
+    - TALLGRASS
+    - FLOWING_WATER
+    - CROPS
+    - IRON_ORE
+    - DIAMOND_ORE
+    - COAL_ORE
+    - REDSTONE_ORE
+    - LAPIS_ORE
+    - EMERALD_ORE
+harvesterBladeBlocks:
+    - DIAMOND_BLOCK
+allowedBlocks:
+    - 5
+    - 17
+    - 26
+    - 41
+    - 42
+    - 46
+    - 50
+    - 51
+    - 53
+    - 54
+    - 57
+    - 63
+    - 64
+    - 68
+    - 69
+    - 71
+    - 72
+    - 77
+    - 96
+    - 125
+    - 126
+    - 134
+    - 135
+    - 136
+    - 143
+    - 162
+    - 163
+    - 164
+    - 193
+    - 194
+    - 195
+    - 196
+    - 197
+    - 323
+    - 324
+    - 330
+    - 427
+    - 428
+    - 429
+    - 430
+    - 431
+    - 193
+    - 194
+    - 195
+    - 196
+    - 197
+
+forbiddenBlocks:
+    - 49
+
+canHover: false
+useGravity: true
+hoverLimit: 0
+canCruise: true
+cruiseSkipBlocks: 0
+canFly: false
+sinkPercent: 99.0
+overallSinkPercent: 85.0
+minHeightLimit: 1
+maxHeightLimit: 280
+requireWaterContact: false
+allowVerticalMovement: false
+speed: 0.30
+tryNudge: false
+detectionMultiplier: 10.0
+underwaterDetectionMultiplier: 1.0
+flyblocks:
+    41:
+        - 20.0
+        - 100.0
+    145: # anvils are OP armor, so limit it
+        - 0.0
+        - 1.0
+    49: # so is obsidian
+        - 0.0
+        - 1.0
+    71: # so are iron doors
+        - 0.0
+        - 10.0
+    8: # so is water
+        - 0.0
+        - 1.0
+    57:
+        - 5.0
+        - 100.0
