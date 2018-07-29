@@ -1,0 +1,457 @@
+# These groups only contain permission nodes.
+#
+# **** You can NOT add anything other than permission nodes ****
+# **** This is NOT where you set up the groups which you give to users! ****
+# **** goto groupmanager/worlds/worldname/groups.yml if you want to set the actual groups! ****
+#
+# These collections are to be inherited in your different worlds groups.yml's
+# They can also be added as one of a users subgroups, but NOT as a primary group.
+# These collections are available to ALL group and user yml's.
+#
+# Add to and customize these groups to fit your needs.
+########################################################################################################
+
+# Rank level structure:
+# Player - default group
+# Veteran - player from old server
+# Donator - donated to server
+# Moderator - as title
+# Admin
+
+
+groups:
+  g:Essentials_Player:
+    permissions:
+    - essentials.afk
+    - essentials.afk.auto
+    - essentials.balance
+    - essentials.balancetop
+    - essentials.build
+    - essentials.chat.shout
+    - essentials.chat.url
+    - -essentials.chat.question
+    - essentials.clearinventory
+    - essentials.compass
+    - essentials.depeth
+    - -essentials.enderchest
+    - essentials.getpos
+    - essentials.help
+    - -essentials.helpop
+    - essentials.ignore
+    - -essentials.info
+    - essentials.itemdb
+    - essentials.kit
+    - essentials.kits.starter
+    - essentials.kits.brewery
+    - essentials.list
+    - essentials.mail
+    - essentials.mail.send
+    - -essentials-me
+    - essentials.motd
+    - essentials.msg
+    - -essentials.msg.color
+    - -essentials.msg.format
+    - -essentials.msg.magic
+    - essentials.pay
+    - essentials.ping
+    - essentials.ptime
+    - essentials.realname
+    - essentials.recipe
+    - essentials.rules
+    - essentials.seen
+    - essentials.signs.color
+    - -essentials.suicide
+    - -essentials.teleport.hidden
+    - essentials.time
+    - -essentials.tpa
+    - essentials.tpaccept
+    - -essentials.tpahere
+    - essentials.tpdeny
+    - -essentials.tphere
+###############################
+  g:Essentials_Donator:
+    permissions:
+    - essentials.msg.color
+    - essentials.nick
+    - essentials.nick.color
+    - -essentials.nick.color.magic
+    - -essentials.nick.color.format
+    - essentials.joinfullserver
+    - essentials.chat.color
+    - essentials.chat.format
+    - essentials.msg.format
+    - essentials.hat
+###############################    
+  g:Essentials_Moderator:
+    permissions:
+    - essentials.afk.kickexempt
+    - essentials.getpos.others
+    - essentials.list.hidden
+    - -essentials.helpop.receive
+    - essentials.chat.ignoreexempt
+    - essentials.list.hidden
+    - essentials.near
+    - essentials.nick.others
+    - essentials.seen.banreason
+    - essentials.seen.extra
+    - essentials.geoip.show
+    - essentials.whois 
+    - essentials.list.hidden
+    - essentials.geoip.show
+    - essentials.ban
+    - essentials.ban.exempt
+    - essentials.ban.notify
+    - essentials.ban.offline
+    - essentials.banip
+    - essentials.clearinventory.others
+    - -essentials.enderchest.others
+    - essentials.ext
+    - -essentials.fireball
+    - essentials.invsee
+    - essentials.invsee.preventmodify
+    - -essentials.jails
+    - essentials.kick
+    - essentials.kick.exempt
+    - essentials.kick.notify
+    - essentials.kill
+    - -essentials.killall
+    - essentials.mute
+    - essentials.mute.exempt
+    - essentials.mute.notify
+    - essentials.remove
+    - essentials.socialspy
+    - essentials.tempban
+    - essentials.tempban.exempt
+    - essentials.tempban.offline
+    - essentials.tempban.unlimited
+    - essentials.unban
+    - essentials.unbanip
+    - essentials.vanish
+    - essentials.vanish.see
+    - essentials.list.hidden
+    - -essentials.vanish.effect
+    - essentials.spawn
+    - essentials.spawn.others
+    - essentials.back
+    - -essentials.back.ondeath
+    # - essentials.worlds.<worldname>
+    - -essentials.keepxp
+    - essentials.jump
+    - essentials.top
+    - essentials.tp
+    - essentials.tp.position
+    - essentials.tp.others
+    - essentials.tpa
+    - essentials.tpahere
+    - essentials.tphere
+    - essentials.world
+    - essentials.teleport.timer.bypass
+    - essentials.teleport.cooldown.bypass
+    - essentials.teleport.hidden
+    - essentials.warp
+    - essentials.warp.list
+    - essentials.warps
+    - essentials.warps.*
+    - essentials.speed
+    - essentials.ptime.others    
+    - essentials.heal
+    - essentials.heal.others
+    - essentials.sgod
+    - essentials.fly
+    - essentials.fly.safelogin
+    - essentials.gamemode
+    - essentials.item
+    - essentials.give
+    - essentials.feed
+    - essentials.feed.others
+###############################
+  g:Essentials_Administrator:
+    permissions:
+    - essentials.eco
+    - essentials.mail.send.sendall
+    - -essentials.antioch
+    - -essentials.backup
+    - essentials.broadcast
+    - essentials.enderchest.modify
+    - -essentials.essentials  
+    - essentials.gc
+    - essentials.invsee.modify
+    - essentials.kickall
+    - essentials.kill.force
+    - essentials.sudo
+    # - essentials.sudo.exempt
+    - essentials.weather
+    - essentials.setspawn
+    - essentials.setwarp
+    - essentials.warp.overwrite
+    - essentials.warp.overwrite.*
+    - essentials.delwarp
+    - essentials.tpaall
+    - essentials.tpall
+    - essentials.warp.otherplayers
+    - essentials.time.set
+    - essentials.fly.others
+    - essentials.gamemode.others
+###############################
+  g:Bukkit_Player:
+    permissions:
+    - -bukkit.command.plugins
+    - bukkit.broadcast.user
+    - -bukkit.command.me
+    - bukkit.command.version
+###############################
+  g:Bukkit_Moderator:
+    permissions:
+    - bukkit.command.plugins
+###############################
+  g:Bukkit_Administrator:
+    permissions:
+    - -bukkit.command.op
+    - -bukkit.command.op.*
+    - bukkit.command.reload
+    - bukkit.command.save
+    - -bukkit.command.save.disable
+    - bukkit.command.say
+    - bukkit.command.stop
+    - bukkit.command.whitelist
+    - bukkit.command.whitelist.add
+    - bukkit.command.whitelist.disable
+    - bukkit.command.whitelist.enable
+    - bukkit.command.whitelist.list
+    - bukkit.command.whitelist.reload
+    - bukkit.command.whitelist.remove
+###############################
+  g:GroupManager_Player_Basic:
+    permissions:
+    - groupmanager.notify.self
+  g:GroupManager_Moderator_Basic:
+    permissions:
+    - groupmanager.listgroups
+    - groupmanager.mandemote
+  g:GroupManager_Administrator_Basic:
+    permissions:
+    - groupmanager.manuadd
+    - groupmanager.manudel
+    - groupmanager.manpromote
+    - groupmanager.mandemote
+    - groupmanager.notify.other
+    - groupmanager.manwhois
+###############################
+  g:GroupManager_Editor:
+    permissions:
+    - groupmanager.manselect
+    - groupmanager.notify.other
+    - groupmanager.mantogglevalidate
+    - groupmanager.mansave
+    - groupmanager.manulistp
+    - groupmanager.manucheckp
+    - groupmanager.mangcheckp
+    - groupmanager.manglistp
+###############################
+  g:Factions_Player:
+    permissions:
+    - factions.access
+    - factions.access.faction
+    - factions.access.player
+    - factions.access.view
+    - factions.create
+    - factions.demote
+    - factions.description
+    - factions.disband
+    - -factions.expansions
+    - factions.faction
+    - factions.flag
+    - factions.home
+    - factions.invite
+    - factions.join
+    - factions.kick
+    - factions.leader
+    - factions.leave
+    - factions.list
+    - factions.map
+    - factions.money
+    - factions.money.balance
+    - factions.money.deposit
+    - factions.money.f2f
+    - factions.money.f2p
+    - factions.money.p2f
+    - factions.money.withdraw
+    - factions.motd
+    - factions.officer
+    - factions.open
+    - factions.perm
+    - factions.player
+    - factions.promote
+    - factions.relation
+    - factions.seechunk
+    - factions.seechunkold
+    - factions.set
+    - factions.set.one
+    - factions.set.auto
+    - factions.set.fill
+    - factions.set.square
+    - factions.set.circle
+    - factions.set.transfer
+    - factions.sethome
+    - factions.name
+    - factions.title
+    - -factions.title.color
+    - factions.unsethome
+    - factions.version
+###############################
+  g:Factions_Moderator:
+    permissions:
+    - factions.join.any
+    - factions.join.others
+    - factions.leader.any
+    - -factions.money.balance.any
+    - factions.officer.any
+    - -factions.powerboost
+    - factions.admin
+    - factions.override
+###############################
+  g:Factions_Administrator:
+    permissions:
+    - factions.admin
+    - factions.override
+    - factions.money.balance.any
+    - factions.powerboost
+###############################
+  g:MassiveTickets_Player:
+    permissions:
+    - massivetickets.basecommand
+    - massivetickets.create
+    - massivetickets.done
+    - massivetickets.modlist
+    - massivetickets.hearsound
+    - massivetickets.version
+###############################
+  g:MassiveTickets_Moderator:
+    permissions:
+    - massivetickets.list
+    - massivetickets.show
+    - massivetickets.show.other
+    - massivetickets.done.other
+    - massivetickets.pick
+    - massivetickets.yield
+    - massivetickets.yield.other
+    - massivetickets.highscore
+    - massivetickets.working
+    - -massivetickets.cheat
+###############################
+  g:FactionsChat_Player:
+    permissions:
+    - factionChat.factionChat
+    - factionChat.allyChat
+    - factionChat.enemyChat
+    - factionChat.otherChat
+    - -factionChat.userAssistantChat
+###############################
+  g:FactionsChat_Moderators:
+    permissions:
+    - -factionChat.adminChat
+    - factionChat.modChat
+    - -factionChat.jrAdminChat
+    - -factionChat.srModChat
+    - -factionChat.jrModChat
+    - factionChat.muteBypass
+    - -factionChat.spy
+###############################
+  g:FactionsChat_Administrator:
+    permissions:
+    - factionChat.update
+    - factionChat.reload
+    - factionChat.admin.info
+    - factionChat.admin.change
+    - -factionChat.spy
+###############################
+  g:Movecraft_Player:
+    permissions:
+    - movecraft.movecraft.list
+    - movecraft.movecraft.types
+    - movecraft.movecraft
+    - movecraft.airskiff
+    - movecraft.airskiff.pilot
+    - movecraft.airskiff.move
+    - movecraft.airskiff.rotate
+    - movecraft.airskiff.repair
+    - movecraft.drill
+    - movecraft.drill.pilot
+    - movecraft.drill.move
+    - movecraft.drill.rotate
+    - movecraft.drill.repair
+    - movecraft.sailboat
+    - movecraft.sailboat.pilot
+    - movecraft.sailboat.move
+    - movecraft.sailboat.rotate
+    - movecraft.sailboat.repair
+    - movecraft.ship
+    - movecraft.ship.pilot
+    - movecraft.ship.move
+    - movecraft.ship.rotate
+    - movecraft.ship.repair
+    - movecraft.smallship
+    - movecraft.smallship.pilot
+    - movecraft.smallship.move
+    - movecraft.smallship.rotate
+    - movecraft.smallship.repair
+###############################
+  g:WorldEdit:
+    permissions:
+    - worldedit.help 
+    - worldedit.fast 
+    - worldedit.biome.*
+    - worldedit.chunkinfo 
+    - worldedit.listchunks
+    - -worldedit.delchunks 
+    - worldedit.clipboard.*
+    - worldedit.schematic.*
+    - worldedit.generation.*
+    - worldedit.global-mask 
+    - worldedit.history.*
+    - worldedit.navigation.*
+    - worldedit.region.*
+    - -worldedit.regen 
+    - worldedit.selection.*
+    - worldedit.wand 
+    - worldedit.wand.toggle 
+    - worldedit.analysis.*
+    - worldedit.snapshots.*
+    - worldedit.superpickaxe 
+    - worldedit.superpickaxe.*
+    - worldedit.tool.*
+    - worldedit.brush.*
+    - -worldedit.brush.butcher
+    - worldedit.fill
+    - worldedit.fill.recursive 
+    - worldedit.drain 
+    - worldedit.fixlava 
+    - worldedit.fixwater 
+    - worldedit.removeabove 
+    - worldedit.removebelow 
+    - worldedit.removenear 
+    - worldedit.replacenear 
+    - worldedit.snow  
+    - worldedit.thaw 
+    - worldedit.green 
+    - worldedit.extinguish 
+    - worldedit.butcher 
+    - worldedit.remove 
+    - worldedit.calc 
+###############################
+  g:Cannon_Player:
+    permissions:
+    - cannons.player.command
+    - cannons.player.help
+    - cannons.player.rename
+    - cannons.player.build
+    - cannons.player.dismantle
+    - cannons.player.load
+    - cannons.player.fire
+    - cannons.player.adjust
+    - cannons.player.autoaim
+###############################
+  g:Shop_Player:
+    permissions:
+    - ChestShop.shop.buy
+    - ChestShop.shop.sell
