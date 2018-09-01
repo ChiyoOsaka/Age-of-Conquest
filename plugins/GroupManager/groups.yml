@@ -1,0 +1,77 @@
+# Group inheritance
+#
+# Any inherited groups prefixed with a g: are global groups
+# and are inherited from the GlobalGroups.yml.
+#
+# Groups without the g: prefix are groups local to this world
+# and are defined in the this groups.yml file.
+#
+# Local group inheritances define your promotion tree when using 'manpromote/mandemote'
+
+groups:
+  Default:
+    default: true
+    permissions: []
+    inheritance:
+    - g:Essentials_Player
+    - g:Bukkit_Player
+    - g:GroupManager_Player_Basic
+    - g:Factions_Player
+    - g:MassiveTickets_Player
+    - g:FactionsChat_Player
+    - g:Movecraft_Player
+    - g:Shop_Player
+    info:
+      prefix: ''
+      build: true
+      suffix: ''
+  Veteran:
+    default: false
+    permissions: []
+    inheritance:
+    - Default
+    info:
+      prefix: '&8[&6V&8]&r '
+      build: true
+      suffix: ''
+  Donator:
+    default: false
+    permissions: []
+    inheritance:
+    - Default
+    - Veteran
+    - g:Essentials_Donator
+    info:
+      prefix: '&8[&a$&8]&r '
+      build: true
+      suffix: ''
+  Moderator:
+    default: false
+    permissions: []
+    inheritance:
+    - Veteran
+    - g:Essentials_Moderator
+    - g:Bukkit_Moderator
+    - g:GroupManager_Moderator_Basic
+    - g:Factions_Moderator
+    - g:MassiveTickets_Moderator
+    - g:FactionsChat_Moderators
+    info:
+      prefix: '&8[&2M&8]&r '
+      build: true
+      suffix: ''
+  Administrator:
+    default: false
+    permissions: []
+    inheritance:
+    - Moderator
+    - g:Essentials_Administrator
+    - g:Bukkit_Administrator
+    - g:GroupManager_Administrator_Basic
+    - g:Factions_Administrator
+    - g:FactionsChat_Administrator
+    - g:WorldEdit
+    info:
+      prefix: '&8[&4A&8]&r '
+      build: true
+      suffix: ''
