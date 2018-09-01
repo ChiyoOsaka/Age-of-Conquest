@@ -1,0 +1,88 @@
+############################################################
+# +-------- Designed and Developed by JackProehl --------+ #
+# +---------- Updated and Managed by iiSnipez -----------+ #
+# +----- Consider donating: http://bit.ly/CL-Donate -----+ #
+############################################################
+
+# Please open a ticket to report all bugs and glitches.
+
+UpdateCheck: true
+AutoDownload: false
+Metrics: false
+MOTD: false
+
+Disabled-Worlds:
+  - world_custom
+
+# Set Broadcast to true to broadcast when a player CombatLogs.
+Broadcast: true
+
+Tag-Duration: 300
+Block-Teleportation: true
+Remove-Invis-Potion: true
+
+# Use an ActionBar to display a CombatTag. (Supports 1.8+)
+ActionBar: true
+
+# Add modes you want removed during Combat under Remove-Modes.
+# Available Modes: fly, disguise.
+Remove-Modes:
+  - fly
+  - disguise
+
+# onKick: if true, remove Tags when players are kicked.
+# onLagout: if true, remove Tags when players lag out.
+# inSafeZone if true, remove Tags when players enter SafeZone (Factions support)
+# inPvPDisabledArea: if true, remove Tags when players enter areas with PvP disabled (WorldGuard support) 
+Remove-Tag:
+  onKick: false
+  onLagout: false
+  inSafeZone: true
+  inPvPDisabledArea: true
+
+# Block commands from being used, or allow only certain commands to be used (aka whitelist mode)
+# Only one of the two should be true
+Block-Commands: true
+Whitelist-Mode: false
+Commands:
+  - home
+  - spawn
+  - tpa
+  - tpaccept
+  - tpahere
+  - warp
+  - fly
+  - disguise
+  - f unstuck
+  - f home
+  - gamemode
+
+# Kill players when they CombatLog.
+Kill: true
+
+# Execute commands when player CombatLogs
+Execute-Commands: false
+ExecutedCommands:  
+  - eco take <name> 100
+  - mail send <name> You lost $100 due to logging out during combat!
+
+############################################################
+# +-----------------------Messages-----------------------+ #
+############################################################
+
+# TO DISABLE A MESSAGE, SET IT AS 'false'!
+UpdateCheckMessage: ''
+MOTDMessage: ''
+BroadcastMessage: '&d<name> &6logged out while in combat!'
+TaggerMessage: '&6You are now in combat for &d5 minutes&6!'
+TaggedMessage: '&6You are now in combat for &d5 minutes&6!'
+UntagMessage: '&6You are no longer in combat.'
+InCombatMessage: '&6You are in combat for another &d<time> &6seconds.'
+NotInCombatMessage: '&6You are not in combat.'
+ActionBarInCombatMessage: ''
+ActionBarUntagMessage: ''
+RemoveModesMessage: '&8[&4CombatLog&8]&c Your <mode> has been removed.'
+RemoveInvisMessage: '&8[&4CombatLog&8]&c Your invisibility potion was removed!'
+BlockCommandsMessage: '&6You can not use that command while in combat.'
+BlockTeleportationMessage: '&6You can not teleport while in combat.'
+KillMessage: '&8[&4CombatLog&8]&c You were killed for CombatLogging!'
